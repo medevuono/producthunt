@@ -36,6 +36,8 @@ gem 'bcrypt', '~> 3.1.7'
 gem 'gravatar-ultimate' # relaciona una foto con un email
 gem 'xmlrpc'
 
+gem 'annotate' # anota los modelos
+
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
