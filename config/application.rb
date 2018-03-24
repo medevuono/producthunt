@@ -16,6 +16,6 @@ module Producthunt
     # -- all .rb files in that directory are automatically loaded.
 
     config.i18n.default_locale = :es
-	config.i18n.enforce_available_locales = true # svenfuchs/rails-i18n <-gema para mensajes en otros idiomas
+	config.i18n.enforce_available_locales = true # svenfuchs/rails-i18n <-gema para mensajes en otros idiomass
   end
 end
