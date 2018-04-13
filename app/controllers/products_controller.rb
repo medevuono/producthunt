@@ -30,7 +30,7 @@ class ProductsController < ApplicationController
 
   def update
   	product = Product.find(params[:id])
-  	if product.update(product_params)
+  	if product.update(product_params) # el update almacena los cambios e la base de datos 
   	  redirect_to products_path, notice: "El producto ha sido modificado con éxito"
     else
       render :edit
@@ -45,7 +45,7 @@ class ProductsController < ApplicationController
   end
 
   private
-    def product_params
+    def product_params # metodo para obtener la info que se ingresa en el formulario
     params.require(:product).permit(:name, :url, :description)
     end
 end
