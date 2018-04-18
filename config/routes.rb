@@ -8,6 +8,7 @@ Rails.application.routes.draw do
 
   resources :users, only: [:new, :create]
   resources :products do
+    resource :vote, only: [:create, :destroy]
     resources :comments, only: [:create]
   end
   #get '/products', to: 'products#index'
