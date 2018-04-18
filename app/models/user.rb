@@ -16,6 +16,7 @@ class User < ApplicationRecord
 
   has_many :products # esto no tiene impacto en la db sino es a nivel de objetos, para navegar atraves de esas relaciones
   has_many :comments
+  has_many :votes
 
   validates :email, uniqueness: true, format: /@/
   validates :password, presence: true, on: :create
