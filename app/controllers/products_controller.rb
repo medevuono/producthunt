@@ -46,6 +46,6 @@ class ProductsController < ApplicationController
 
   private
     def product_params # metodo para obtener la info que se ingresa en el formulario
-    params.require(:product).permit(:name, :url, :description)
+    params.require(:product).permit(:name, :url, :description, :image)
     end
 end
