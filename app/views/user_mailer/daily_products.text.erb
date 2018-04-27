@@ -1,0 +1,8 @@
+  Hola,
+  Estos fueron los productos más votados el día de ayer
+
+    <% @products.each do |product| %>
+      <%= product.name %>, <%= product_url(product) %>: <%= product.description %>
+    <% end %>
+
+ Esperamos que tengas un día lleno de productos digitales ;)
