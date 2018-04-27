@@ -36,6 +36,8 @@ gem 'bcrypt', '~> 3.1.7'
 gem 'gravatar-ultimate' # relaciona una foto con un email
 gem 'xmlrpc'
 
+gem 'figaro' # manejo de informacion sencible .gitignore
+
 gem 'annotate' # anota los modelos
 gem "paperclip", "~> 6.0.0" # manejo de imagenes
 
